@@ -1,2 +1,2 @@
 # wonderland-records
-Homepage for Wonderland Records.
+Homepage for Wonderland Records
