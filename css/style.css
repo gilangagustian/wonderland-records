@@ -1,0 +1,280 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html,
+body
+{
+	width: 100%;
+	min-height: 100%;
+}
+
+body {
+	color: #fffce1;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Quicksand', 'Roboto', Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus {
+	outline: 0;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+	height: 65px;
+	background-color: #FFFFFF;
+}
+
+.sticky {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
+
+.wonderland-logo {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.content {
+	overflow-x: hidden;
+}
+
+/* Introduction Section */
+.introduction-section {
+	height: 100vh;
+	background: #FFFFFF url("../img/sidebar.png") no-repeat;
+	background-size: cover;
+}
+
+.intro-text {
+	position: absolute;
+	bottom: 100px;
+	left: 100px;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+/* Slider Section */
+.slider-section {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.slider {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 1;
+	z-index: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	-webkit-transition: -webkit-transform 1600ms;
+	transition: -webkit-transform 1600ms, transform 1600ms;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.slide-1 {
+	left: 0;
+}
+.slide-2 {
+	left: 100%
+}
+
+.slider {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.slider-content {
+	width: 400px;
+	padding-left: 50px;
+}
+
+.slide-1 .slider-content {
+	position: absolute;
+	bottom: 50px;
+}
+
+.slide-2 .slider-content {
+	position: absolute;
+	bottom: 50px;
+}
+
+.slide-1 h2 {
+	color: #FFFFFF;
+	font-weight: 900;
+	text-transform: capitalize;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 1.2;
+	opacity: 0;
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 2px;
+}
+
+.slide-1 h4 {
+	font-size: 22px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	opacity: 0;
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.slide-2 h2 {
+	background: #852400;
+	color: #FFFFFF;
+	padding: 10px;
+	font-weight: 900;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.2;
+	opacity: 0;
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 2px;
+}
+
+.slide-2 h4 {
+	background: #182285;
+	font-size: 22px;
+	padding: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	opacity: 0;
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.slider > img {
+	position: absolute;
+	width: 100%;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	opacity: 0;
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+}
+
+.slider h2 {
+	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
+	transition: transform 800ms, opacity 800ms;
+}
+.slider h4 {
+	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
+	transition: transform 800ms, opacity 800ms;
+}
+.slider > img {
+	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
+	transition: transform 800ms, opacity 800ms;
+}
+
+.slide-radio1:checked ~ .slider {
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+}
+.slide-radio2:checked ~ .slider {
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.slide-radio1:checked ~ .slide-1 h2,
+.slide-radio2:checked ~ .slide-2 h2,
+.slide-radio1:checked ~ .slide-1 h4,
+.slide-radio2:checked ~ .slide-2 h4,
+.slide-radio1:checked ~ .slide-1 > img,
+.slide-radio2:checked ~ .slide-2 > img {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1
+}
+
+/* About Section */
+.about-section {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.section1 {
+	width: 50vw;
+	float: left;
+	height: 100vh;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wonderland-rainbow-logo {
+	width: 200px;
+	margin: 250px auto 20px;
+	text-align: center;
+}
+
+.wonderland-about-header {
+	width: 75%;
+	margin: auto auto 20px;
+	color: #E94F1B;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.wonderland-about-text {
+	width: 75%;
+	margin: auto auto 10px;
+	color: #E94F1B;
+	font-size: 1.1em;
+}
+
+.section2 {
+	background: #FFFFFF url("../img/about-us.jpg") no-repeat center;
+	background-size: cover;
+	width: 50vw;
+	float: left;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
