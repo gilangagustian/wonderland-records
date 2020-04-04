@@ -117,12 +117,12 @@ a:focus {
 
 .slide-1 .slider-content {
 	position: absolute;
-	bottom: 50px;
+	bottom: 100px;
 }
 
 .slide-2 .slider-content {
 	position: absolute;
-	bottom: 50px;
+	bottom: 100px;
 }
 
 .slide-1 h2 {
@@ -315,15 +315,21 @@ a:focus {
 
 	.section1 {
 		width: 100vw;
-		overflow: auto;
+		height: auto;
+		overflow: hidden;
 	}
 
 	.wonderland-rainbow-logo {
 		margin-top: 40px;
 	}
 
+	.wonderland-about-header {
+		text-align: justify;
+	}
+
 	.wonderland-about-text {
 		margin-bottom: 40px;
+		text-align: justify;
 	}
 
 	.section2 {
