@@ -210,6 +210,10 @@ a:focus {
 	transition: transform 800ms, opacity 800ms;
 }
 
+.slide-radio1, .slide-radio2 {
+	display: none;
+}
+
 .slide-radio1:checked ~ .slider {
 	-webkit-transform: translateX(0%);
 	transform: translateX(0%);
@@ -235,7 +239,6 @@ a:focus {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
-	overflow-x: hidden;
 }
 
 .section1 {
@@ -245,6 +248,7 @@ a:focus {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .wonderland-rainbow-logo {
@@ -277,4 +281,53 @@ a:focus {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overflow: hidden;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.intro-text {
+		width: 92vw;
+		font-size: 16px;
+		left: 20px;
+		right: 20px;
+		bottom: 30%;
+	}
+
+	.wonderland-small-logo {
+		width: 30px;
+	}
+
+	.slider > img {
+		object-fit: cover;
+	}
+
+	.slider-content {
+		width: 370px;
+	}
+
+	.slide-1 h2, .slide-2 h2 {
+		font-size: 14px;
+	}
+
+	.slide-1 h4, .slide-2 h4 {
+		font-size: 16px;
+	}
+
+	.section1 {
+		width: 100vw;
+		overflow: auto;
+	}
+
+	.wonderland-rainbow-logo {
+		margin-top: 40px;
+	}
+
+	.wonderland-about-text {
+		margin-bottom: 40px;
+	}
+
+	.section2 {
+		width: 100vw;
+		float: none;
+	}
 }
