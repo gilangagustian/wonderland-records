@@ -117,12 +117,12 @@ a:focus {
 
 .slide-1 .slider-content {
 	position: absolute;
-	bottom: 100px;
+	bottom: 60px;
 }
 
 .slide-2 .slider-content {
 	position: absolute;
-	bottom: 100px;
+	bottom: 60px;
 }
 
 .slide-1 h2 {
@@ -302,7 +302,7 @@ a:focus {
 	}
 
 	.slider-content {
-		width: 370px;
+		width: 300px;
 	}
 
 	.slide-1 h2, .slide-2 h2 {
