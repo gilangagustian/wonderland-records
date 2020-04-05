@@ -423,16 +423,17 @@ a:focus {
 
 	.contact-section-1 {
 		width: 100vw;
+		height: auto;
 	}
 
 	.contact-section-1 h1 {
-		margin: 200px auto 0;
-		font-size: 40px;
+		margin: 30px auto 0;
+		font-size: 30px;
 		width: 300px;
 	}
 
 	.contact-section-1 .contact-name {
-		margin: 30px auto;
+		margin: 20px auto;
 		width: 300px;
 	}
 
@@ -444,6 +445,12 @@ a:focus {
 
 	.contact-section-2 {
 		width: 100vw;
+		height: auto;
+	}
+
+	.contact-section-3 {
+		width: 100vw;
+		height: 300px;
 	}
 
 	.contact-section-4 {
