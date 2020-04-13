@@ -11,7 +11,7 @@
 	}
 
 	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
+		// openbtn.addEventListener( 'click', toggleMenu );
 		if( closebtn ) {
 			closebtn.addEventListener( 'click', toggleMenu );
 		}

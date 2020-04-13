@@ -103,7 +103,10 @@ a:focus {
 	left: 0;
 }
 .slide-2 {
-	left: 100%
+	left: 100%;
+}
+.slide-3 {
+	left: 200%;
 }
 
 .slider {
@@ -112,21 +115,21 @@ a:focus {
 }
 
 .slider-content {
-	width: 400px;
+	width: 600px;
 	padding-left: 50px;
 }
 
 .slide-1 .slider-content {
 	position: absolute;
-	bottom: 60px;
+	bottom: 30px;
 }
 
-.slide-2 .slider-content {
+.slide-2 .slider-content, .slide-3 .slider-content {
 	position: absolute;
 	bottom: 60px;
 }
 
-.slide-1 h2 {
+.slide-2 h2 {
 	color: #FFFFFF;
 	font-weight: 900;
 	text-transform: capitalize;
@@ -141,7 +144,7 @@ a:focus {
 	letter-spacing: 2px;
 }
 
-.slide-1 h4 {
+.slide-2 h4 {
 	font-size: 22px;
 	color: #FFFFFF;
 	font-weight: bold;
@@ -154,7 +157,8 @@ a:focus {
 	margin-bottom: 10px;
 }
 
-.slide-2 h2 {
+
+.slide-3 h2 {
 	background: #852400;
 	color: #FFFFFF;
 	padding: 10px;
@@ -171,7 +175,7 @@ a:focus {
 	letter-spacing: 2px;
 }
 
-.slide-2 h4 {
+.slide-3 h4 {
 	background: #182285;
 	font-size: 22px;
 	padding: 10px;
@@ -211,7 +215,7 @@ a:focus {
 	transition: transform 800ms, opacity 800ms;
 }
 
-.slide-radio1, .slide-radio2 {
+.slide-radio1, .slide-radio2, .slide-radio3 {
 	display: none;
 }
 
@@ -219,17 +223,26 @@ a:focus {
 	-webkit-transform: translateX(0%);
 	transform: translateX(0%);
 }
+
 .slide-radio2:checked ~ .slider {
 	-webkit-transform: translateX(-100%);
 	transform: translateX(-100%);
 }
 
+.slide-radio3:checked ~ .slider {
+	-webkit-transform: translateX(-200%);
+	transform: translateX(-200%);
+}
+
 .slide-radio1:checked ~ .slide-1 h2,
 .slide-radio2:checked ~ .slide-2 h2,
+.slide-radio3:checked ~ .slide-3 h2,
 .slide-radio1:checked ~ .slide-1 h4,
 .slide-radio2:checked ~ .slide-2 h4,
+.slide-radio3:checked ~ .slide-3 h4,
 .slide-radio1:checked ~ .slide-1 > img,
-.slide-radio2:checked ~ .slide-2 > img {
+.slide-radio2:checked ~ .slide-2 > img,
+.slide-radio3:checked ~ .slide-3 > img {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 	opacity: 1
@@ -381,11 +394,11 @@ a:focus {
 		width: 300px;
 	}
 
-	.slide-1 h2, .slide-2 h2 {
+	.slide-2 h2, .slide-3 h2 {
 		font-size: 14px;
 	}
 
-	.slide-1 h4, .slide-2 h4 {
+	.slide-2 h4, .slide-3 h4 {
 		font-size: 16px;
 	}
 
