@@ -547,8 +547,14 @@ textarea:focus, input:focus, select:focus {
 		width: 100vw;
 	}
 
+    .subscription-section {
+        height: auto;
+        overflow: auto;
+    }
+
     .subscription-section #mc_embed_signup {
         width: 80vw;
-        top: 20%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
