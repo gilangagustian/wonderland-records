@@ -373,6 +373,79 @@ a:focus {
 	height: 50%;
 }
 
+/* Subscription Section */
+.subscription-section {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: #FFFFFF url("../img/sidebar.png") no-repeat;
+	background-size: cover;
+}
+
+.subscription-section #mc_embed_signup {
+	width: 40vw;
+	margin: auto;
+	position: relative;
+	top: 30%;
+}
+
+#mc_embed_signup h2 {
+	text-align: center;
+	margin-bottom: 30px !important;
+}
+
+#mc_embed_signup .button {
+	width: 100% !important;
+	background: transparent !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
+	text-align: center;
+	margin-top: 20px !important;
+}
+
+#mc_embed_signup .mc-field-group select {
+	width: 100% !important;
+}
+
+#mc_embed_signup div.response {
+	width: 100% !important;
+}
+
+#mc_embed_signup #mce-success-response {
+	color: #FFFFFF !important;
+	text-align: center !important;
+}
+
+#mc_embed_signup .indicates-required {
+	font-size: 13px !important;
+	font-weight: bold !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+    border: none transparent !important;
+    border-bottom: solid 1px #FFFFFF !important;
+    background: transparent !important;
+}
+
+#mc_embed_signup .mc-field-group select {
+    border: none transparent !important;
+    border-bottom: solid 1px #FFFFFF !important;
+    background: transparent !important;
+    color: #FFFFFF !important;
+}
+
+#mc_embed_signup .mc-field-group select option {
+    color: #000000 !important;
+}
+
+#mc_embed_signup .asterisk {
+    color: #FFFFFF !important;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
 	.intro-text {
 		width: 92vw;
