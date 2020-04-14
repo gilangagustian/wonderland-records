@@ -546,4 +546,9 @@ textarea:focus, input:focus, select:focus {
 	.contact-section-5 {
 		width: 100vw;
 	}
+
+    .subscription-section #mc_embed_signup {
+        width: 80vw;
+        top: 20%;
+    }
 }
