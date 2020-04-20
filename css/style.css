@@ -490,12 +490,12 @@ textarea:focus, input:focus, select:focus {
 	}
 
 	.wonderland-about-header {
-		text-align: justify;
+		text-align: left;
 	}
 
 	.wonderland-about-text {
 		margin-bottom: 40px;
-		text-align: justify;
+		text-align: left;
 	}
 
 	.section2 {
