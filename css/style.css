@@ -501,28 +501,28 @@ a:focus {
 }
 
 #mc_embed_signup .mc-field-group input {
-    border: none transparent !important;
-    border-bottom: solid 1px #FFFFFF !important;
-    background: transparent !important;
+	border: none transparent !important;
+	border-bottom: solid 1px #FFFFFF !important;
+	background: transparent !important;
 }
 
 #mc_embed_signup .mc-field-group select {
-    border: none transparent !important;
-    border-bottom: solid 1px #FFFFFF !important;
-    background: transparent !important;
-    color: #FFFFFF !important;
+	border: none transparent !important;
+	border-bottom: solid 1px #FFFFFF !important;
+	background: transparent !important;
+	color: #FFFFFF !important;
 }
 
 #mc_embed_signup .mc-field-group select option {
-    color: #000000 !important;
+	color: #000000 !important;
 }
 
 #mc_embed_signup .asterisk {
-    color: #FFFFFF !important;
+	color: #FFFFFF !important;
 }
 
 textarea:focus, input:focus, select:focus {
-    outline: none;
+	outline: none;
 }
 
 .footer {
@@ -585,7 +585,7 @@ textarea:focus, input:focus, select:focus {
 		object-fit: cover;
 	}
 
-	.slide-1 .slider-content, .slide-2 .slider-content {
+	.slide-1 .slider-content {
 		position: relative;
 		top: 0;
 		margin: auto;
@@ -659,17 +659,17 @@ textarea:focus, input:focus, select:focus {
 		height: auto;
 	}
 
-    .subscription-section {
+	.subscription-section {
 		width: 100vw;
-        height: auto;
-    }
+		height: auto;
+	}
 
-    .subscription-section #mc_embed_signup {
-        width: 80vw;
+	.subscription-section #mc_embed_signup {
+		width: 80vw;
 		top: 0;
 		margin-top: 20px;
 		margin-bottom: 20px;
-    }
+	}
 
 	#mc_embed_signup h2 {
 		font-size: 22px !important;
