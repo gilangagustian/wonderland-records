@@ -52,7 +52,7 @@
         $(this).toggleClass('open');
     });
 
-    setInterval(handleNext, 6000);
+    setInterval(handleNext, 8000);
     function handleNext() {
 
         var $radios = $('input[class*="slide-radio"]');
