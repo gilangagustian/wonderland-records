@@ -293,12 +293,15 @@ a:focus {
 .slider-pagination {
 	position: absolute;
 	bottom: 30px;
-	width: 575px;
-	left: 20px;
+	width: 55px;
+	left: 50%;
+	margin-left: -27.5px;
+	text-align: center;
 	z-index: 1000;
 	display: flex;
 	align-items: center;
 }
+
 .slider-pagination label {
 	width: 8px;
 	height: 8px;
@@ -642,6 +645,7 @@ textarea:focus, input:focus, select:focus {
 	.youtube-frame {
 		width: 100vw;
 		top: 0;
+		height: 220px;
 	}
 
 	.section2 {
