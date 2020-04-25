@@ -704,3 +704,99 @@ textarea:focus, input:focus, select:focus {
 		font-size: 16px;
 	}
 }
+
+@media only screen and (min-device-width : 321px) and (max-device-width : 1024px) {
+	.about-section {
+		height: auto;
+	}
+
+	.section1 {
+		width: 100vw;
+		height: auto;
+		overflow: auto;
+	}
+
+	.wonderland-about-title {
+		margin-top: 30px;
+		font-size: 26px;
+	}
+
+	.wonderland-about-header {
+		font-size: 22px;
+	}
+
+	.section2 {
+		width: 100vw;
+		background-position: top;
+	}
+
+	.slider-section {
+		width: 100vw;
+		height: 600px;
+		position: relative;
+		overflow-x: hidden;
+	}
+
+	.slider {
+		height: 100%;
+	}
+
+	.slider > img {
+		width: 250px;
+		object-fit: cover;
+	}
+
+	.slide-1 .slider-content, .slide-2 .slider-content {
+		position: relative;
+		top: 0;
+		width: 100%;
+		text-align: center;
+		margin: 25px auto auto;
+	}
+
+	.download-link {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.video-section {
+		height: auto;
+		overflow: auto;
+	}
+
+	.youtube-frame {
+		width: 100vw;
+		top: 0;
+		height: 220px;
+	}
+
+	.contact-section {
+		height: auto;
+		overflow: auto;
+	}
+
+	.contact-section-1 {
+		width: 100vw;
+		height: auto;
+	}
+
+	.wonderland-rainbow-logo {
+		margin-top: 50px;
+	}
+
+	.contact-address {
+		margin-top: 30px;
+	}
+
+	.subscription-section {
+		width: 100vw;
+		height: auto;
+	}
+
+	.subscription-section #mc_embed_signup {
+		width: 80vw;
+		top: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
