@@ -674,6 +674,14 @@ textarea:focus, input:focus, select:focus {
 		font-size: 22px !important;
 	}
 
+	.terms-and-policy {
+		font-size: 17px;
+	}
+
+	#mc_embed_signup .button {
+		font-size: 20px !important;
+	}
+
 	.footer {
 		height: 60px;
 		overflow: auto;
