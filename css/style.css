@@ -147,14 +147,13 @@ a:focus {
 }
 
 .slider-content {
-	width: 600px;
-	padding-left: 50px;
+	width: 200px;
 }
 
 .slide-1 .slider-content {
 	position: absolute;
-	top: 200px;
-	right: -200px;
+	transform: translateY(-50%);
+	right: 200px;
 	font-size: 17px;
 	font-weight: bold;
 	color: #000000;
@@ -162,8 +161,8 @@ a:focus {
 
 .slide-2 .slider-content {
 	position: absolute;
-	top: 200px;
-	right: -200px;
+	transform: translateY(-50%);
+	right: 200px;
 	font-size: 17px;
 	font-weight: bold;
 	color: #000000;
@@ -440,7 +439,7 @@ a:focus {
 
 .contact-address {
 	width: 75%;
-	margin: 100px auto 20px;
+	margin: 30px auto 20px;
 	color: #000000;
 	font-size: 16px;
 	font-weight: normal;
@@ -605,7 +604,8 @@ textarea:focus, input:focus, select:focus {
 
 	.slide-1 .slider-content, .slide-2 .slider-content {
 		position: relative;
-		top: 0;
+		top: 30px;
+		right: 0;
 		width: 100%;
 		text-align: center;
 		margin: 25px auto auto;
@@ -763,7 +763,8 @@ textarea:focus, input:focus, select:focus {
 
 	.slide-1 .slider-content, .slide-2 .slider-content {
 		position: relative;
-		top: 0;
+		top: 30px;
+		right: 0;
 		width: 100%;
 		text-align: center;
 		margin: 25px auto auto;
