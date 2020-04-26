@@ -153,26 +153,26 @@ a:focus {
 
 .slide-1 .slider-content {
 	position: absolute;
-	top: 300px;
-	right: 20px;
-	font-size: 30px;
+	top: 200px;
+	right: -200px;
+	font-size: 17px;
 	font-weight: bold;
 	color: #000000;
 }
 
 .slide-2 .slider-content {
 	position: absolute;
-	top: 300px;
-	right: 20px;
-	font-size: 30px;
+	top: 200px;
+	right: -200px;
+	font-size: 17px;
 	font-weight: bold;
 	color: #000000;
 }
 
 .download-link {
-	margin-top: 300px;
+	margin-top: 100px;
 	display: block;
-	font-size: 28px;
+	font-size: 17px;
 }
 
 .slide-3 .slider-content {
@@ -243,6 +243,7 @@ a:focus {
 
 .slide-1 > img, .slide-2 > img {
 	margin: auto;
+	width: 500px;
 }
 
 .slide-3 > img {
@@ -349,14 +350,14 @@ a:focus {
 	width: 75%;
 	margin: 100px auto 20px;
 	font-weight: normal;
-	font-size: 50px;
+	font-size: 30px;
 }
 
 .wonderland-about-header {
 	width: 75%;
 	margin: auto auto 20px;
 	color: #FFFFFF;
-	font-size: 28px;
+	font-size: 16px;
 	font-weight: bold;
 }
 
@@ -375,7 +376,7 @@ a:focus {
 	width: 75%;
 	margin: auto auto 10px;
 	color: #E94F1B;
-	font-size: 1.1em;
+	font-size: 16px;
 }
 
 .section2 {
@@ -398,10 +399,10 @@ a:focus {
 }
 
 .youtube-frame {
-	width: 1200px;
+	width: 80%;
 	margin: auto;
-	top: 150px;
-	height: 750px;
+	top: 50px;
+	height: calc(100vh - 100px);
 	position: relative;
 }
 
@@ -425,7 +426,7 @@ a:focus {
 
 .wonderland-rainbow-logo {
 	width: 200px;
-	margin: 150px auto 60px;
+	margin: 100px auto 60px;
 	text-align: center;
 }
 
@@ -433,15 +434,15 @@ a:focus {
 	width: 75%;
 	margin: 30px auto 20px;
 	color: #000000;
-	font-size: 28px;
+	font-size: 16px;
 	font-weight: bold;
 }
 
 .contact-address {
 	width: 75%;
-	margin: 130px auto 20px;
+	margin: 100px auto 20px;
 	color: #000000;
-	font-size: 28px;
+	font-size: 16px;
 	font-weight: normal;
 }
 
@@ -464,7 +465,7 @@ a:focus {
 .terms-and-policy {
 	margin-top: 30px;
 	color: #FFFFFF;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .terms-and-policy a {
@@ -475,24 +476,24 @@ a:focus {
 	width: 40vw;
 	margin: auto;
 	position: relative;
-	top: 140px;
+	top: 90px;
 }
 
 #mc_embed_signup h2 {
-	font-size: 32px !important;
+	font-size: 20px !important;
 	font-weight: bold;
 	margin-bottom: 30px !important;
 }
 
 .mc-field-group label {
 	font-weight: bold;
-	font-size: 16px !important;
+	font-size: 15px !important;
 }
 
 #mc_embed_signup .button {
 	width: 100% !important;
 	background: transparent !important;
-	font-size: 30px !important;
+	font-size: 20px !important;
 	font-weight: bold !important;
 	text-align: left !important;
 	margin-top: 30px !important;
@@ -553,13 +554,13 @@ textarea:focus, input:focus, select:focus {
 }
 
 .footer-social-links a {
-	font-size: 25px;
+	font-size: 20px;
 	margin-right: 5px;
 	color: #FFFFFF;
 }
 
 .copyright {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
 	float: right;
 	margin: 40px 40px 0 0;
