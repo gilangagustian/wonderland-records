@@ -153,7 +153,7 @@ a:focus {
 .slide-1 .slider-content {
 	position: absolute;
 	transform: translateY(-50%);
-	right: 200px;
+	right: 20%;
 	font-size: 17px;
 	font-weight: bold;
 	color: #000000;
@@ -162,7 +162,7 @@ a:focus {
 .slide-2 .slider-content {
 	position: absolute;
 	transform: translateY(-50%);
-	right: 200px;
+	right: 20%;
 	font-size: 17px;
 	font-weight: bold;
 	color: #000000;
