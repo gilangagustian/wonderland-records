@@ -84,8 +84,8 @@ a:focus {
 
 /* Introduction Section */
 .introduction-section {
-	height: 100vh;
-	background: #FFFFFF url("../img/mikha.jpg") no-repeat;
+	height: 105vh;
+	background: #FFFFFF url("../img/Home-Slider.jpg") no-repeat;
 	background-size: cover;
 }
 
@@ -139,6 +139,7 @@ a:focus {
 
 .slide-3 {
 	left: 200%;
+	background: #c5ccd2;
 }
 
 .slider {
@@ -168,15 +169,19 @@ a:focus {
 	color: #000000;
 }
 
+.slide-3 .slider-content {
+	position: absolute;
+	transform: translateY(-50%);
+	right: 15%;
+	font-size: 17px;
+	font-weight: bold;
+	color: #000000;
+}
+
 .download-link {
 	margin-top: 100px;
 	display: block;
 	font-size: 17px;
-}
-
-.slide-3 .slider-content {
-	position: absolute;
-	bottom: 60px;
 }
 
 .slide-2 h2 {
@@ -240,23 +245,10 @@ a:focus {
 	margin-bottom: 10px;
 }
 
-.slide-1 > img, .slide-2 > img {
+.slide-1 > img, .slide-2 > img, .slide-3 > img {
 	margin: auto;
 	width: 500px;
 }
-
-.slide-3 > img {
-	position: absolute;
-	width: 100%;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	height: 100%;
-	opacity: 0;
-	-webkit-transform: translateX(500px);
-	transform: translateX(500px);
-}
-
 
 .slider h2 {
 	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
@@ -307,9 +299,9 @@ a:focus {
 .slider-pagination {
 	position: absolute;
 	bottom: 30px;
-	width: 55px;
+	width: 100px;
 	left: 50%;
-	margin-left: -27.5px;
+	margin-left: -37.5px;
 	text-align: center;
 	z-index: 1000;
 	display: flex;
@@ -602,7 +594,7 @@ textarea:focus, input:focus, select:focus {
 		object-fit: cover;
 	}
 
-	.slide-1 .slider-content, .slide-2 .slider-content {
+	.slide-1 .slider-content, .slide-2 .slider-content, .slide-3 .slider-content {
 		position: relative;
 		top: 30px;
 		right: 0;
