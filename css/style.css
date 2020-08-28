@@ -142,6 +142,11 @@ a:focus {
 	background: #c5ccd2;
 }
 
+.slide-4 {
+	left: 300%;
+	background: #c5ccd2;
+}
+
 .slider {
 	display: flex;
 	justify-content: flex-start;
@@ -170,6 +175,15 @@ a:focus {
 }
 
 .slide-3 .slider-content {
+	position: absolute;
+	transform: translateY(-50%);
+	right: 15%;
+	font-size: 17px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.slide-4 .slider-content {
 	position: absolute;
 	transform: translateY(-50%);
 	right: 15%;
@@ -245,7 +259,40 @@ a:focus {
 	margin-bottom: 10px;
 }
 
-.slide-1 > img, .slide-2 > img, .slide-3 > img {
+.slide-4 h2 {
+	background: #852400;
+	color: #FFFFFF;
+	padding: 10px;
+	font-weight: 900;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.2;
+	opacity: 0;
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 2px;
+}
+
+.slide-4 h4 {
+	background: #182285;
+	font-size: 22px;
+	padding: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	opacity: 0;
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.slide-1 > img, .slide-2 > img, .slide-3 > img, .slide-4 > img {
 	margin: auto;
 	width: 500px;
 }
@@ -263,7 +310,7 @@ a:focus {
 	transition: transform 800ms, opacity 800ms;
 }
 
-.slide-radio1, .slide-radio2, .slide-radio3 {
+.slide-radio1, .slide-radio2, .slide-radio3, .slide-radio4 {
 	display: none;
 }
 
@@ -282,15 +329,23 @@ a:focus {
 	transform: translateX(-200%);
 }
 
+.slide-radio4:checked ~ .slider {
+	-webkit-transform: translateX(-300%);
+	transform: translateX(-300%);
+}
+
 .slide-radio1:checked ~ .slide-1 h2,
 .slide-radio2:checked ~ .slide-2 h2,
 .slide-radio3:checked ~ .slide-3 h2,
+.slide-radio4:checked ~ .slide-4 h2,
 .slide-radio1:checked ~ .slide-1 h4,
 .slide-radio2:checked ~ .slide-2 h4,
 .slide-radio3:checked ~ .slide-3 h4,
+.slide-radio4:checked ~ .slide-4 h4,
 .slide-radio1:checked ~ .slide-1 > img,
 .slide-radio2:checked ~ .slide-2 > img,
-.slide-radio3:checked ~ .slide-3 > img {
+.slide-radio3:checked ~ .slide-3 > img,
+.slide-radio4:checked ~ .slide-4 > img {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 	opacity: 1
