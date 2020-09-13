@@ -76,4 +76,31 @@
 
         }
     }
+
+    // Initialize the plugin
+    $('#press-kit-popup').popup({
+        opacity: 0.3,
+        transition: 'all 0.3s'
+	});
+
+    // Set default `pagecontainer` for all popups (optional, but recommended for screen readers and iOS*)
+    $.fn.popup.defaults.pagecontainer = '.contact-section';
+
+    $('#pk_download').click(function (e) {
+    	e.preventDefault();
+        $.ajax({
+            url: "/download_press_kit.php",
+			method: "POST",
+			data: {email: $("#pk_email").val()},
+			success: function ( data ) {
+                window.location.href = '/press-kits/Press-Kit-b5739da7785f72df8833982b040e0cc9.zip';
+            },
+			error: function ( error ) {
+                $("#pk-error-response").fadeIn();
+                setTimeout(function () {
+                    $("#pk-error-response").fadeOut();
+                }, 3000);
+            }
+        });
+    });
 })();
