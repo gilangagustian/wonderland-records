@@ -85,7 +85,7 @@ a:focus {
 /* Introduction Section */
 .introduction-section {
 	height: 105vh;
-	background: #FFFFFF url("../img/Home-Slider-Amateur.jpg") no-repeat;
+	background: #FFFFFF url("../img/Home-Slider-amateur.jpg") no-repeat;
 	background-size: cover;
 }
 
@@ -495,6 +495,60 @@ a:focus {
 .contact-address a {
 	color: #000000;
 	text-decoration: none;
+}
+
+/* Press Release */
+.press-kit-container {
+	width: 75%;
+	margin: 30px auto 20px;
+}
+
+#press-kit-download {
+	font-size: 16px !important;
+	font-weight: bold;
+	background: #e84e22;
+	color: #ffffff;
+	border: 0;
+	padding: 10px;
+}
+
+#press-kit-popup {
+	background: #ffffff;
+	color: #222222;
+	width: 450px;
+	padding: 30px 20px;
+	opacity: 0.9 !important;
+}
+
+#press-kit-popup h2 {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.press-kit-form {
+	margin-top: 20px;
+}
+
+#pk_email {
+	width: 100%;
+	border: none transparent !important;
+	border-bottom: solid 1px #e84e22 !important;
+	background: transparent !important;
+}
+
+#pk_download {
+	margin-top: 20px;
+	font-weight: bold;
+	background: #e84e22;
+	color: #ffffff;
+	border: 0;
+	padding: 10px;
+}
+
+#pk-error-response {
+	margin-top: 20px;
+	color: #e84e22;
+	font-weight: bold;
 }
 
 /* Subscription Section */
