@@ -78,6 +78,7 @@
     }
 
     $('#pk_download').click(function (e) {
+        $('#pk_download').prop("disabled", true);
         e.preventDefault();
         $.ajax({
             url: "/download_press_kit.php",
@@ -85,11 +86,13 @@
             data: {email: $("#pk_email").val()},
             success: function ( data ) {
                 window.location.href = '/press-kits/Press-Kit-b5739da7785f72df8833982b040e0cc9.zip';
+                $('#pk_download').prop("disabled", false);
             },
             error: function ( error ) {
                 $("#pk-error-response").fadeIn();
                 setTimeout(function () {
                     $("#pk-error-response").fadeOut();
+                    $('#pk_download').prop("disabled", false);
                 }, 3000);
             }
         });

@@ -545,6 +545,10 @@ a:focus {
 	padding: 10px;
 }
 
+#pk_download:disabled {
+	background: #222222;
+}
+
 #pk-error-response {
 	margin-top: 20px;
 	color: #e84e22;
