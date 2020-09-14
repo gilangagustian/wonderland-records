@@ -916,4 +916,8 @@ textarea:focus, input:focus, select:focus {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+
+	#press-kit-popup {
+		width: 100vw;
+	}
 }

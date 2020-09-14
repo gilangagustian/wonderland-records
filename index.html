@@ -182,17 +182,6 @@
 				</div>
 			</div>
 
-			<div id="press-kit-popup">
-				<h2>Press enter your email to get the press kit!</h2>
-				<form class="press-kit-form">
-					<div class="press-kit-field-group">
-						<input type="email" placeholder="Email address..." value="" name="pk_email" class="pk_email" id="pk_email">
-					</div>
-					<div id="pk-error-response" style="display: none;">Please enter a valid email address</div>
-					<input type="submit" value="Download Press Kit" name="download" id="pk_download" class="button">
-				</form>
-			</div>
-
 			<div class="subscription-section">
 				<!-- Begin Mailchimp Signup Form -->
 				<div id="mc_embed_signup">
@@ -496,10 +485,35 @@
 	</div>
 </div><!-- /container -->
 
+<div id="press-kit-popup" style="display: none;">
+	<h2>Press enter your email to get the press kit!</h2>
+	<form class="press-kit-form">
+		<div class="press-kit-field-group">
+			<input type="email" placeholder="Email address..." value="" name="pk_email" class="pk_email" id="pk_email">
+		</div>
+		<div id="pk-error-response" style="display: none;">Please enter a valid email address</div>
+		<input type="submit" value="Download Press Kit" name="download" id="pk_download" class="button">
+	</form>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="js/classie.js"></script>
 <script src="js/jquery.popupoverlay.js"></script>
 <script src="js/main.js"></script>
+<script>
+    $(document).ready(function() {
+
+        // Initialize the plugin
+        $('#press-kit-popup').popup({
+            opacity: 0.3,
+            transition: 'all 0.3s'
+        });
+
+        // Set default `pagecontainer` for all popups (optional, but recommended for screen readers and iOS*)
+        $.fn.popup.defaults.pagecontainer = '.container'
+    });
+</script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='COUNTRY';ftypes[3]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
 </html>
